@@ -27,13 +27,18 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-image
-                    src="assets/asset.png"
-                    scale="1 1 1"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
+                <a-assets>
+                <img id="my-image" src="assets/asset.png">
+              </a-assets>
+            
+              <a-image
+                src="#my-image"
+                scale="2 1 1"
+                class="clickable"
+                rotation="-90 0 0"
+                gesture-handler
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
+              ></a-image>
             </a-marker>
 
             <a-entity camera></a-entity>
