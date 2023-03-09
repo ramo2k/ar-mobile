@@ -29,30 +29,30 @@
             >
                 <a-image
                     src="assets/asset.png"
-                    scale="2 1 1"
+                    scale="3 1 1"
                     class="clickable"
                     rotation="-360 0 0"
                     gesture-handler
-                    animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
+                    animation="property: rotation; to: 0 360 0; loop: true; easing: linear"
                 >
                 </a-image>
 
-                <a-sphere position="1.5" color="blue" radius ="0.15">
+                <a-sphere position="1.5" color="blue" radius ="0.15" gesture-handler>
                     <a-animation
                         attribute="color"
                         dur="10000"
                         from="blue"
-                        to="red"
+                        to="orange"
                         repeat="indefinite">
                     </a-animation>
                 </a-sphere>
                 
-                <a-sphere position="-1.5" color="red" radius ="0.15">
+                <a-sphere position="-1.5" color="red" radius ="0.15" gesture-handler>
                     <a-animation
                         attribute=" color"
                         dur="10000"
                         from="red"
-                        to="blue"
+                        to="green"
                         repeat="indefinite">
                     </a-animation>
                 </a-sphere>
