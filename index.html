@@ -57,11 +57,13 @@
                     </a-animation>
                 </a-sphere>
                 
-                <a-text value="Prototype AR" 
-                    position="0 1.5 0" 
-                    material="color: #f9a602; shader: flat; opacity: 0.8"
-                    text="width: 4; height: 4; letterSpacing: 0.5; font: kelsonsans; style: normal">
-                </a-text>                  
+                <a-entity
+                    position="0 1.5 0"
+                    rotation="-90 0 0"
+                    geometry="primitive: plane; width: auto; height: auto"
+                    material="color: blue"
+                    text="value: Protype AR">
+                </a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
