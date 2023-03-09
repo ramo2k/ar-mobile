@@ -1,1 +1,0 @@
-https://github.com/stemkoski/AR.js-examples
