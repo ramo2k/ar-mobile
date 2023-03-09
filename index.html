@@ -17,6 +17,15 @@
             embedded
             gesture-detector
         >
+            <a-text value="Prototype AR"
+                color="#fff"
+                font="kelsonsans"
+                position="0 1.5 -3"
+                scale="2 2 2"
+                text-geometry="font:https://cdn.aframe.io/fonts/kelsonsans.fnt; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05;"
+                material="color: #ff0000; metalness: 0.5; roughness: 0.5; shader: standard; side: double; envMapIntensity: 1.0;">
+                <a-entity position="0 0 -0.05" text-geometry="font:https://cdn.aframe.io/fonts/kelsonsans.fnt; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05;" material="color: #fff; shader: standard; side: double;"></a-entity>
+            </a-text>
             <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -56,6 +65,10 @@
                         repeat="indefinite">
                     </a-animation>
                 </a-sphere>
+
+                
+                <a-plane scale="2 2 2" rotation="-90 0 0" material="opacity: 0.5; color: #000;"></a-plane>
+                <a-entity position="0 0.5 0" scale="0.5 0.5 0.5" gltf-model="url(assets/model.gltf)"></a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
